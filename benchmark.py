@@ -19,7 +19,8 @@ ALGOS = {
 
 def gen_worst(m: int, n: int):
     assert m <= n
-    a = [2 * i + 1 for i in range(m)]
+    step = (2 * n) // m 
+    a = [step + 1 for i in range(m)]
     b = [2 * i for i in range(n)]
     
     if m > 0:
